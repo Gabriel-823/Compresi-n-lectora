@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Evaluación | Comprensión lectora </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Gabriel Chamba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(HEADER1.jpg); background-repeat: repeat-x;"><div id="headerContent">Comprensión lectora</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="contenidos.html" class="daddy">Contenidos</a>
+   <ul class="other-section">
+      <li><a href="qu_es_la_comprensin_lectora.html" class="no-ch">¿Qué es la comprensión lectora?</a></li>
+      <li><a href="tipos_de_texto.html" class="no-ch">Tipos de texto</a></li>
+      <li><a href="estrategias_de_lectura.html" class="no-ch">Estrategias de Lectura</a></li>
+   </ul>
+   </li>
+   <li><a href="ejercicios_de_comprensin_lectora.html" class="daddy">Ejercicios de comprensión lectora</a>
+   <ul class="other-section">
+      <li><a href="ejercicio_1.html" class="no-ch">Ejercicio 1</a></li>
+      <li><a href="ejercicio_2.html" class="no-ch">Ejercicio 2</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="evaluacin.html" class="active no-ch">Evaluación</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="ejercicio_2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Evaluación</h1></header>
+<article class="iDevice_wrapper QuizTestIdevice em_iDevice em_iDevice_question" id="id22">
+<script type="text/javascript">/*<![CDATA[*/
+var numQuestions = 6;
+var rawScore = 0;
+var actualScore = 0;
+var question0;
+var question1;
+var question2;
+var question3;
+var question4;
+var question5;
+var key0 = 1;
+var key1 = 1;
+var key2 = 2;
+var key3 = 2;
+var key4 = 0;
+var key5 = 1;
+function getAnswer()
+        {
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm22").key0b22[i].checked)
+               {
+                  question0 = document.getElementById("quizForm22").key0b22[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm22").key1b22[i].checked)
+               {
+                  question1 = document.getElementById("quizForm22").key1b22[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm22").key2b22[i].checked)
+               {
+                  question2 = document.getElementById("quizForm22").key2b22[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm22").key3b22[i].checked)
+               {
+                  question3 = document.getElementById("quizForm22").key3b22[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm22").key4b22[i].checked)
+               {
+                  question4 = document.getElementById("quizForm22").key4b22[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 5; i++)
+            {
+               if (document.getElementById("quizForm22").key5b22[i].checked)
+               {
+                  question5 = document.getElementById("quizForm22").key5b22[i].value;
+                  break;
+               }
+            }
+            }
+        function calcRawScore(){
+
+            if (question0 == key0)
+            {
+               rawScore++;
+            }
+            if (question1 == key1)
+            {
+               rawScore++;
+            }
+            if (question2 == key2)
+            {
+               rawScore++;
+            }
+            if (question3 == key3)
+            {
+               rawScore++;
+            }
+            if (question4 == key4)
+            {
+               rawScore++;
+            }
+            if (question5 == key5)
+            {
+               rawScore++;
+            }
+        
+        }
+        
+        function calcScore2()
+        {
+            getAnswer();
+     
+            calcRawScore();
+            actualScore =  Math.round(rawScore / numQuestions * 100);
+            var id = "22";
+            document.getElementById("quizForm"+id).submitB.disabled = true;
+            var s = document.getElementById("quizFormScore"+id);
+                        var msg_str ="Su puntuación es %d%%";            msg_str = msg_str.replace("%d",actualScore).replace("%%","%");            if (s) { s.innerHTML = "<div class='feedback'><p>"+msg_str+"</p></div>"; } else { alert(msg_str); }
+           
+        }
+    /*]]>*/</script>
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cuestionario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<form name="quizForm22" id="quizForm22" action="#" class="quiz-test-form">
+<input type="hidden" name="passrate" id="passrate-22" value="50" />
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion0b22" class="block iDevice_content">
+<p>1. ¿Cuál es la definición más adecuada de comprensión lectora?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b221" class="sr-av"><a href="#answer-key0b221">Opción 1</a></label><input type="radio" name="key0b22" id="key0b221" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b221">
+<div id="taoptionAnswer0q0b22" class="block iDevice_content">
+<p>La capacidad de leer textos rápidamente.<br /> </p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b222" class="sr-av"><a href="#answer-key0b222">Opción 2</a></label><input type="radio" name="key0b22" id="key0b222" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b222">
+<div id="taoptionAnswer1q0b22" class="block iDevice_content">
+<p>La capacidad para entender lo que se lee, tanto en palabras como en sentido global.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b223" class="sr-av"><a href="#answer-key0b223">Opción 3</a></label><input type="radio" name="key0b22" id="key0b223" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b223">
+<div id="taoptionAnswer2q0b22" class="block iDevice_content">
+<p>La capacidad de memorizar palabras difíciles.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b224" class="sr-av"><a href="#answer-key0b224">Opción 4</a></label><input type="radio" name="key0b22" id="key0b224" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b224">
+<div id="taoptionAnswer3q0b22" class="block iDevice_content">
+<p>La habilidad para escribir textos complejos.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion1b22" class="block iDevice_content">
+<p>2. ¿Qué nivel de comprensión se refiere a deducir lo que no está expresado directamente en el texto?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b221" class="sr-av"><a href="#answer-key1b221">Opción 1</a></label><input type="radio" name="key1b22" id="key1b221" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b221">
+<div id="taoptionAnswer0q1b22" class="block iDevice_content">
+<p>Literal</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b222" class="sr-av"><a href="#answer-key1b222">Opción 2</a></label><input type="radio" name="key1b22" id="key1b222" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b222">
+<div id="taoptionAnswer1q1b22" class="block iDevice_content">
+<p>Inferencial</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b223" class="sr-av"><a href="#answer-key1b223">Opción 3</a></label><input type="radio" name="key1b22" id="key1b223" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b223">
+<div id="taoptionAnswer2q1b22" class="block iDevice_content">
+<p>Crítica</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b224" class="sr-av"><a href="#answer-key1b224">Opción 4</a></label><input type="radio" name="key1b22" id="key1b224" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b224">
+<div id="taoptionAnswer3q1b22" class="block iDevice_content">
+<p>Analítica</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion2b22" class="block iDevice_content">
+<p>3. ¿Cuál de los siguientes textos tiene como objetivo vender un producto o servicio?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b221" class="sr-av"><a href="#answer-key2b221">Opción 1</a></label><input type="radio" name="key2b22" id="key2b221" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b221">
+<div id="taoptionAnswer0q2b22" class="block iDevice_content">
+<p>Texto científico</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b222" class="sr-av"><a href="#answer-key2b222">Opción 2</a></label><input type="radio" name="key2b22" id="key2b222" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b222">
+<div id="taoptionAnswer1q2b22" class="block iDevice_content">
+<p>Texto literario</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b223" class="sr-av"><a href="#answer-key2b223">Opción 3</a></label><input type="radio" name="key2b22" id="key2b223" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b223">
+<div id="taoptionAnswer2q2b22" class="block iDevice_content">
+<p>Texto publicitario</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b224" class="sr-av"><a href="#answer-key2b224">Opción 4</a></label><input type="radio" name="key2b22" id="key2b224" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b224">
+<div id="taoptionAnswer3q2b22" class="block iDevice_content">
+<p>Texto instructivo</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion3b22" class="block iDevice_content">
+<p>4. ¿Cuál es una característica de los textos científicos?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b221" class="sr-av"><a href="#answer-key3b221">Opción 1</a></label><input type="radio" name="key3b22" id="key3b221" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b221">
+<div id="taoptionAnswer0q3b22" class="block iDevice_content">
+<p>Están llenos de figuras literarias.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b222" class="sr-av"><a href="#answer-key3b222">Opción 2</a></label><input type="radio" name="key3b22" id="key3b222" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b222">
+<div id="taoptionAnswer1q3b22" class="block iDevice_content">
+<p>Solo se utilizan en redes sociales.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b223" class="sr-av"><a href="#answer-key3b223">Opción 3</a></label><input type="radio" name="key3b22" id="key3b223" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b223">
+<div id="taoptionAnswer2q3b22" class="block iDevice_content">
+<p>Utilizan un vocabulario especializado y técnico.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b224" class="sr-av"><a href="#answer-key3b224">Opción 4</a></label><input type="radio" name="key3b22" id="key3b224" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b224">
+<div id="taoptionAnswer3q3b22" class="block iDevice_content">
+<p>Buscan entretener al lector.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion4b22" class="block iDevice_content">
+<p>5. ¿Cuál es una estrategia útil para entender una palabra desconocida dentro del texto?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b221" class="sr-av"><a href="#answer-key4b221">Opción 1</a></label><input type="radio" name="key4b22" id="key4b221" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b221">
+<div id="taoptionAnswer0q4b22" class="block iDevice_content">
+<p>Usar las pistas del contexto</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b222" class="sr-av"><a href="#answer-key4b222">Opción 2</a></label><input type="radio" name="key4b22" id="key4b222" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b222">
+<div id="taoptionAnswer1q4b22" class="block iDevice_content">
+<p>Leer más rápido</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b223" class="sr-av"><a href="#answer-key4b223">Opción 3</a></label><input type="radio" name="key4b22" id="key4b223" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b223">
+<div id="taoptionAnswer2q4b22" class="block iDevice_content">
+<p>Saltar la palabra</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b224" class="sr-av"><a href="#answer-key4b224">Opción 4</a></label><input type="radio" name="key4b22" id="key4b224" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b224">
+<div id="taoptionAnswer3q4b22" class="block iDevice_content">
+<p>Memorizar el párrafo</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion5b22" class="block iDevice_content">
+<p>Lea detenidamente y responda;</p>
+<p><img src="el_amor_sobre_todas_las_cosas.png" alt="" width="183" height="264" style="float: right; margin: 0 0 10px 10px;" /></p>
+<p>Antes de comenzar el examen del aspecto psicológico del egoísmo y del amor a sí mismo, debemos destacar la  falacia lógica que implica la tesis de que el amor a los demás y el amor a uno mismo se excluyen recíprocamente. Si es una virtud amar al prójimo como a uno mismo, debe serlo también y no un vicio que me ame a mí mismo, puesto que también yo soy un ser humano. No hay ningún concepto del hombre en el que el yo no esté incluido.<br />Una doctrina que proclama  tal exclusión demuestra ser intrínsecamente contradictoria. La idea  expresada en el  precepto bíblico "Ama a tu prójimo como a ti mismo", implica que el respeto por  la propia integridad y  unicidad, el amor y la comprensión  del propio sí mismo, no pueden separarse del respeto, el amor y la comprensión  al otro. El amor a sí mismo está inseparablemente ligado  al amor a cualquier otro ser.</p>
+<p>6. En el texto, el término examen significa</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b221" class="sr-av"><a href="#answer-key5b221">Opción 1</a></label><input type="radio" name="key5b22" id="key5b221" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b221">
+<div id="taoptionAnswer0q5b22" class="block iDevice_content">
+<p>A) cuestionamiento.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b222" class="sr-av"><a href="#answer-key5b222">Opción 2</a></label><input type="radio" name="key5b22" id="key5b222" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b222">
+<div id="taoptionAnswer1q5b22" class="block iDevice_content">
+<p>B) análisis.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b223" class="sr-av"><a href="#answer-key5b223">Opción 3</a></label><input type="radio" name="key5b22" id="key5b223" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b223">
+<div id="taoptionAnswer2q5b22" class="block iDevice_content">
+<p>C) prueba.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b224" class="sr-av"><a href="#answer-key5b224">Opción 4</a></label><input type="radio" name="key5b22" id="key5b224" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b224">
+<div id="taoptionAnswer3q5b22" class="block iDevice_content">
+<p>D) explicación.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b225" class="sr-av"><a href="#answer-key5b225">Opción 5</a></label><input type="radio" name="key5b22" id="key5b225" value="4" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b225">
+<div id="taoptionAnswer4q5b22" class="block iDevice_content">
+<p>E) pregunta.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<div class="block iDevice_buttons">
+<p><input type="submit" name="submitB" value="ENVIAR RESPUESTAS" /> <span class="js-hidden js-warning">Habilitar JavaScript</span></p>
+</div>
+<div id="quizFormScore22"></div>
+</form>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="ejercicio_2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
